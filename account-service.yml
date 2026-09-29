@@ -4,7 +4,7 @@ servlet.context-path: /account
 
 spring:
   datasource:
-   url: jdbc:postgresql://localhost:9010/lovable-account-db
+   url: jdbc:postgresql://localhost:9010/lovable-account-db?options=-c%20TimeZone=Asia/Kolkata
    username: user
    password: password
    driver-class-name: org.postgresql.Driver
