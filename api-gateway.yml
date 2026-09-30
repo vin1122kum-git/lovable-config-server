@@ -2,16 +2,17 @@ server:
   port: 7070
 
 spring:
+  application:
+    name: api-gateway
+
   cloud:
     gateway:
       server:
         webflux:
           routes:
-            # Account Service (Context-path: /account)
             - id: account-service
               uri: lb://account-service
               predicates:
                 - Path=/api/v1/account/**
               filters:
                 - StripPrefix=2
-
