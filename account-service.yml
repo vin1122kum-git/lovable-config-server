@@ -7,6 +7,22 @@ spring:
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    enabled: true
+    register-with-eureka: true
+    fetch-registry: true
+
+  instance:
+    prefer-ip-address: false
+    hostname: localhost
+
+app:
+  frontend:
+    url: http://localhost:8080/frontend
    
 
 stripe:
