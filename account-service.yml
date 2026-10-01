@@ -34,4 +34,3 @@ stripe:
     secret:  whsec_844a037e24997034ac33d1d40b08b66316e593930f925ebde94f3ee3ed410b26
 
 
-client.url: http://localhost:8080
