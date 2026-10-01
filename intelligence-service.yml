@@ -1,6 +1,7 @@
 server:
   port: 9030
-  servlet.context-path: /intelligence
+  servlet:
+    context-path: /intelligence
 
 spring:
   datasource:
@@ -8,3 +9,15 @@ spring:
     username: user
     password: password
     driver-class-name: org.postgresql.Driver
+
+  ai:
+    openai:
+      api-key: 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
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: qwen/qwen3-next-80b-a3b-instruct:free
+          temperature: 0.0
+      embedding:
+        options:
+          model: qwen/qwen3-embedding-8b
