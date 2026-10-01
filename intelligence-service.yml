@@ -21,3 +21,15 @@ spring:
       embedding:
         options:
           model: qwen/qwen3-embedding-8b
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
