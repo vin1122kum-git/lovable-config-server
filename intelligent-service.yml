@@ -33,3 +33,6 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
+
+jwt:
+  secret-key: erdtfg5434567y8uijbvfgyhjbfde4567ujnbc342g54g3v2ccexqwd
