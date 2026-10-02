@@ -28,9 +28,9 @@ spring:
                 - StripPrefix=2
 
             # Intelligence Service
-            - id: intelligent-service
-              uri: lb://intelligent-service
+            - id: intelligence-service
+              uri: lb://intelligence-service
               predicates:
-                - Path=/api/v1/intelligent/**
+                - Path=/api/v1/intelligence/**
               filters:
                 - StripPrefix=2
