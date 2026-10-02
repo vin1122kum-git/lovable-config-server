@@ -8,7 +8,12 @@ spring:
     url: jdbc:postgresql://localhost:9010/lovable-workspace-db
     username: user
     password: password
-    driver-class-name: org.postgresql.Driver\
+    driver-class-name: org.postgresql.Driver
+
+  data:
+    redis:
+      host: localhost
+      port: 6379
 
 eureka:
   client:
@@ -17,11 +22,6 @@ eureka:
     enabled: true
     register-with-eureka: true
     fetch-registry: true
-
-  data:
-    redis:
-      host: localhost
-      port: 6379
 
 minio:
   url: http://localhost:9000
